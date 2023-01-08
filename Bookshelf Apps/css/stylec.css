@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+}
+body{
+    background-color: #e2f8fe;
+    color: white;
+}
+/* header */
+header {
+    height: 7vh;
+    line-height: 7vh;
+    background-color: #EEE3CB;
+}
+/* end header */
+
+/* main */
+input {
+    text-transform: capitalize;
+}
+.title {
+    border: 2px solid black;
+}
+.title h1{
+    text-align: center;
+    color: black;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.upSide {
+    width: 1000px;
+    background-image: linear-gradient(to right, #2ff1fd, #52befc);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.75);
+    margin-top: 20px;
+}
+.upSide h1 {
+    color: #fafeff;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 2.2em;
+    font-family: 'Shadows Into Light', cursive;
+}
+/* form */
+.form {
+    background-color: #edfafd;
+    height: 500px;
+    color: #838383;
+    padding: 0 80px;
+}
+.form h1{
+    color: #52befc;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    padding-top: 30px;
+    font-weight: 800;
+    font-family: 'Assistant', sans-serif;
+}
+.form form {
+    margin: auto;
+}
+.form input {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+input {
+    padding: 7px 10px;
+    background-color: #aed9da ;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
+.form .input {
+    padding: 10px 0;
+}
+.input #submit {
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    transition: .2s;
+    background-color: #2a93d5;
+    color: #f9f9f9;
+}
+.input #submit:hover{
+    transform: scale(1.1);
+}
+
+/* end form */
+
+
+
+/* downside */
+.downSide {
+    box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.75);
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+    background-color: #2a93d5;
+    background-image: linear-gradient(to left, #2ff1fd, #52befc);
+    margin-bottom: 20px;
+}
+/* search book */
+.search {
+    margin: auto;
+    padding: 20px;
+}
+.search .input{
+    margin: auto;
+}
+.search input {
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    height: 40px;
+    padding-left: 30px;
+    background-color: #e2f8fe;
+}
+
+
+
+/* end search book */
+.rakBuku {
+    color: black;
+    background-color: #edfafd;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    text-transform: capitalize;
+}
+.horizontalLine {
+    display: flex;
+    align-items: center;
+}
+.rakBuku span{
+    height: 220px;
+    width: 5px;
+    background-color: #52befc;
+    border-radius: 10px;
+    border:none;
+}
+.bookcase {
+    margin: 10px auto;
+    flex: 1;
+}
+.bookcase h2 {
+    text-align: center;
+    margin: 10px auto;
+}
+.rak {
+    padding: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    max-height: 350px;
+}
+.rakBuku hr {
+    width: 50px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #52befc;
+    margin: auto;
+    border: none;
+}
+.inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px    auto;
+    width: 350px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    box-shadow: -1px -1px 7px 3px rgba(0, 0, 0, 0.75);
+    border-left: 6px solid #6ec9fd;
+    transition: .2s;
+}
+.inner:hover{
+    transform: translateX(5px);
+}
+
+.author, .tahun{
+    display: flex;
+    flex-direction: row;
+}
+.element h4 {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.element h5{
+    font-size: .9em;
+    font-weight: bold;
+}
+.element p{
+    text-indent: 5px;
+}
+
+/* button */
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checklist {
+    background: url(../img/checklist\ hover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    transition: .3s;
+}
+.checklist:hover{
+    transform: scale(1.2);
+}
+
+.delete {
+    background: url(../img/delete.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    transition: .3s;
+}
+.delete:hover{
+    transform: scale(1.2);
+}
+
+.undo {
+    background: url(../img/undo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    transition: .3s;
+}
+.undo:hover {
+    transform: rotate(90deg) scale(1.2);
+}
+
+.edit {
+    background: url(../img/edit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    transition: .3s;
+}
+.edit:hover{
+    transform: scale(1.2);
+}
+/* end downside */
+
+
+/* edit Input */
+.editForm{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a93d5a2;
+    display: none;
+    
+}
+.editForm h1 {
+    position: absolute;
+    top: 230px;
+    font-size: 2em;
+}
+.editForm form {
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+.editForm label {
+    color: #252525;
+    margin-top: 10px;
+}
+.editForm input{
+    border: none;
+    border-radius: 5px;
+    background-color: #e2f8fe;
+    color: #252525;
+}
+.editForm .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.submit, .cencel{
+    width: 70px;
+    height: 35px;
+}
+.editForm .submit {
+    background-color: #2a93d5;  
+    color: #e2f8fe;
+    cursor: pointer;
+    transition: .2s;
+}
+.editForm .submit:hover{
+    transform: scale(1.1);
+}
+.editForm .cencel {
+    background-color: #2a93d5;  
+    color: #e2f8fe;
+    cursor: pointer;
+    transition: .2s;
+}
+.editForm .cencel:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* end main */
+
+@media screen and (max-width : 1000px) {
+    .upSide {
+        width: 700px;
+    }
+    .downSide {
+        width: 700px;
+        
+    }
+    .rakBuku {
+        flex-direction: column;
+        height: 800px;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .upSide {
+        width: 500px;
+    }
+    .downSide {
+        width: 500px;
+        
+    }
+
+}
+
